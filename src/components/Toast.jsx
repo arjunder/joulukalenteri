@@ -6,7 +6,7 @@ const Toast = ({ message, onClose }) => {
     if (message) {
       const timer = setTimeout(() => {
         onClose();
-      }, 2000); // Näkyy 2 sekuntia
+      }, 2000); // Visible for 2 seconds
       return () => clearTimeout(timer);
     }
   }, [message, onClose]);
