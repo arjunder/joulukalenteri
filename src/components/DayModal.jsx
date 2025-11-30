@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Sparkles } from 'lucide-react';
+import { X, Sparkles, Share2 } from 'lucide-react';
 import { cn } from '../utils/cn';
 
 const DayModal = ({ isOpen, onClose, data }) => {
@@ -71,7 +71,18 @@ const DayModal = ({ isOpen, onClose, data }) => {
                 </p>
               </div>
 
-              <div className="mt-8">
+              <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
+                <button
+                  onClick={() => {
+                    const text = `Tämän päivän joulusiivoustehtävä: ${data.task} 🧹 #siivousjoulukalenteri`;
+                    window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, '_blank');
+                  }}
+                  className="px-8 py-3 bg-[#25D366] text-white font-bold rounded-full shadow-lg hover:bg-[#128C7E] hover:scale-105 transition-all transform active:scale-95 flex items-center justify-center gap-2"
+                >
+                  <Share2 size={20} />
+                  Jaa
+                </button>
+
                 <button
                   onClick={onClose}
                   className="px-8 py-3 bg-christmas-red text-white font-bold rounded-full shadow-lg hover:bg-[#6e1616] hover:scale-105 transition-all transform active:scale-95 border-2 border-transparent hover:border-christmas-gold"

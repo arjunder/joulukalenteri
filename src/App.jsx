@@ -73,10 +73,10 @@ function App() {
       <div className="relative z-10 w-full max-w-6xl mx-auto px-4 py-6 flex flex-col items-center">
         
         <header className="text-center mb-6 mt-4 md:mt-8 w-full max-w-lg">
-          <h1 className="text-2xl md:text-6xl font-serif text-christmas-gold mb-3 tracking-wide drop-shadow-lg flex items-center justify-center gap-3">
-            <span className="text-christmas-red text-2xl md:text-5xl">✨</span>
+          <h1 className="text-xl md:text-6xl font-serif text-christmas-gold mb-3 tracking-wide drop-shadow-lg flex items-center justify-center gap-2 md:gap-3">
+            <span className="text-christmas-gold text-xl md:text-5xl">✨</span>
             Siivousjoulukalenteri
-            <span className="text-christmas-red text-2xl md:text-5xl">✨</span>
+            <span className="text-christmas-gold text-xl md:text-5xl">✨</span>
           </h1>
           <p className="text-sm md:text-xl opacity-80 font-serif italic mb-4">
             Talo puhtaaksi jouluksi 2025
@@ -143,8 +143,8 @@ function App() {
                   Fix: Width is now 30% (mobile) and 26% (desktop).
                   This makes the doors smaller to fit nicely inside the triangle.
               */}
-              <div className="absolute bottom-0 left-0 right-0 flex items-end justify-center pb-2 md:pb-6 z-10">
-                 <div className="grid grid-cols-2 gap-2 md:gap-4 w-[30%] md:w-[26%]">
+              <div className="absolute bottom-0 left-0 right-0 flex items-end justify-center pb-3 md:pb-6 z-10">
+                 <div className="grid grid-cols-2 gap-1.5 md:gap-4 w-[28%] md:w-[26%]">
                    {roofItems.map(item => (
                      <CalendarDoor 
                        key={item.day} 

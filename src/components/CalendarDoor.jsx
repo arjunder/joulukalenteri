@@ -32,12 +32,12 @@ const CalendarDoor = ({ item, isOpen, isShaking, onClick, className }) => {
            {/* Perforated effect on edges */}
            <div className="absolute inset-1 border border-dashed border-christmas-cream/20 rounded-md pointer-events-none"></div>
 
-          <span className="text-2xl md:text-4xl font-serif text-christmas-gold drop-shadow-md font-bold z-10">{item.day}</span>
-          {!isOpen && <div className="mt-1 text-christmas-cream/40"><Lock size={12} /></div>}
+          <span className="text-lg md:text-4xl font-serif text-christmas-gold drop-shadow-md font-bold z-10">{item.day}</span>
+          {!isOpen && <div className="mt-0 md:mt-1 text-christmas-cream/40"><Lock size={10} className="w-3 h-3 md:w-4 md:h-4" /></div>}
         </div>
 
         {/* DOOR OPEN (BACK/CONTENT) */}
-        <div className="absolute inset-0 backface-hidden bg-[#fdfbf7] text-christmas-dark rounded-lg shadow-inner rotate-y-180 flex flex-col items-center justify-between text-center p-1 md:p-2 overflow-hidden border-2 border-christmas-gold/20">
+        <div className="absolute inset-0 backface-hidden bg-[#fff8d6] shadow-[inset_0_0_15px_rgba(255,190,0,0.4)] text-christmas-dark rounded-lg rotate-y-180 flex flex-col items-center justify-between text-center p-1 md:p-2 overflow-hidden border-2 border-christmas-gold/40">
           
           {/* Icon - Centered and clear on mobile */}
           <div className="text-xl md:text-2xl mt-1 flex items-center justify-center overflow-visible">{item.icon}</div>
