@@ -73,10 +73,10 @@ function App() {
       <div className="relative z-10 w-full max-w-6xl mx-auto px-4 py-6 flex flex-col items-center">
         
         <header className="text-center mb-6 mt-4 md:mt-8 w-full max-w-lg">
-          <h1 className="text-3xl md:text-6xl font-serif text-christmas-gold mb-3 tracking-wide drop-shadow-lgDW flex items-center justify-center gap-3">
-            <Sparkles className="text-christmas-red w-6 h-6 md:w-10 md:h-10" />
-            Joulusiivous
-            <Sparkles className="text-christmas-red w-6 h-6 md:w-10 md:h-10" />
+          <h1 className="text-2xl md:text-6xl font-serif text-christmas-gold mb-3 tracking-wide drop-shadow-lg flex items-center justify-center gap-3">
+            <span className="text-christmas-red text-2xl md:text-5xl">✨</span>
+            Siivousjoulukalenteri
+            <span className="text-christmas-red text-2xl md:text-5xl">✨</span>
           </h1>
           <p className="text-sm md:text-xl opacity-80 font-serif italic mb-4">
             Talo puhtaaksi jouluksi 2025
