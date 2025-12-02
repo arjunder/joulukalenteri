@@ -37,10 +37,10 @@ const DayModal = ({ isOpen, onClose, data }) => {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.9, y: 20 }}
             transition={{ type: "spring", duration: 0.5 }}
-            className="relative w-full max-w-lg bg-[#fdfbf7] rounded-2xl shadow-2xl overflow-hidden border-4 border-christmas-gold/30"
+            className="relative w-full max-w-lg bg-[#fdfbf7] rounded-2xl shadow-2xl overflow-hidden border-4 border-christmas-gold/30 max-h-[90vh] flex flex-col"
           >
             {/* Header decoration */}
-            <div className="h-24 bg-gradient-to-br from-christmas-red to-[#5c0b0b] relative flex items-center justify-center overflow-hidden">
+            <div className="h-24 bg-gradient-to-br from-christmas-red to-[#5c0b0b] relative flex items-center justify-center overflow-hidden shrink-0">
                <div className="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/snow.png')]"></div>
                <div className="text-6xl animate-pulse drop-shadow-lg filter contrast-125">{data.icon}</div>
                
@@ -54,7 +54,7 @@ const DayModal = ({ isOpen, onClose, data }) => {
             </div>
 
             {/* Content Body */}
-            <div className="p-8 text-center">
+            <div className="p-6 md:p-8 text-center overflow-y-auto overscroll-contain">
               <div className="inline-flex items-center gap-2 mb-2 text-christmas-gold font-serif italic text-lg">
                 <Sparkles size={16} />
                 <span>Luukku {data.day}</span>
@@ -66,7 +66,7 @@ const DayModal = ({ isOpen, onClose, data }) => {
               </h2>
               
               <div className="bg-christmas-light/5 p-6 rounded-xl border border-christmas-dark/10">
-                <p className="text-lg text-christmas-dark/80 leading-relaxed font-medium">
+                <p className="text-lg text-christmas-dark/80 leading-relaxed font-medium whitespace-pre-line">
                   {data.desc}
                 </p>
               </div>
